@@ -1,0 +1,49 @@
+/* app/globals.css */
+@import "tailwindcss";
+
+/* Tes tokens (variables CSS) */
+:root {
+  --color-fg: 15 23 42;        /* slate-900 */
+  --color-bg: 255 255 255;     /* white */
+  --color-primary: 59 130 246; /* #3b82f6 */
+  --radius-md: 0.5rem;
+}
+
+:root[data-theme="dark"] {
+  --color-fg: 226 232 240; /* slate-200 */
+  --color-bg: 15 23 42;    /* slate-900 */
+  --color-primary: 37 99 235; /* #2563eb */
+}
+
+/* Composants réutilisables via @layer components + @apply */
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 font-medium
+           px-4 py-2 rounded-md transition active:translate-y-px
+           focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+    border-radius: var(--radius-md);
+    color: rgb(var(--color-fg));
+    background: rgb(var(--color-bg));
+  }
+
+  .btn-primary {
+    color: white;
+    background-color: rgb(var(--color-primary));
+    @apply hover:brightness-95 focus-visible:ring-blue-500;
+  }
+
+  .btn-outline {
+    color: rgb(var(--color-primary));
+    border: 1px solid rgb(var(--color-primary));
+    @apply bg-transparent hover:bg-blue-50/40 dark:hover:bg-white/5
+           focus-visible:ring-blue-500;
+  }
+
+  .btn-link {
+    color: rgb(var(--color-primary));
+    @apply bg-transparent px-0 py-0 underline-offset-4 hover:underline;
+  }
+
+  .btn-sm { @apply px-3 py-1.5 text-sm; }
+  .btn-lg { @apply px-5 py-3 text-base; }
+}

@@ -1,0 +1,17 @@
+{
+  "slug": "lancer-chaîne-youtube-belgique-2025",
+  "title": "Lancer sa chaîne YouTube en Belgique en 2025",
+  "description": "Feuille de route pour vidéastes belges : format, cadence, SEO vidéo.",
+  "date": "2025-08-30",
+  "author": { "name": "Nom Agence", "url": "https://exemple.be" },
+  "tags": ["YouTube", "SEO", "Belgique"],
+  "cover": "/images/blog/youtube-2025.jpg",
+  "readingTime": 7,
+  "content": [
+    { "type": "h2", "text": "Pourquoi YouTube en 2025 ?" },
+    { "type": "p", "text": "Le paysage…"},
+    { "type": "ul", "items": ["Optimiser les titres", "Chapitrage", "Shorts"] },
+    { "type": "img", "src": "/images/blog/courbe.png", "alt": "Croissance" },
+    { "type": "cta", "href": "/contact", "label": "Discutons de votre chaîne" }
+  ]
+}
